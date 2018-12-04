@@ -1,6 +1,6 @@
 <h1>Song Savant</h1>
     
-    <div class="dropdown">
+    <!-- <div class="dropdown">
         <button onclick="myFunction()" class="dropbtn">Pick your genre</button>
         <div id="myDropdown" class="dropdown-content">
         <a href="#Rap">Rap</a>
@@ -13,5 +13,14 @@
         <a href="#Reggae">Reggae</a>
         <a href="#Oldies">Oldies</a>
         <a href="#Soul">Soul</a>
+        </div>
+    </div> -->
+
+    <div id="dropdown">
+        <div>
+            <select ng-model="$ctrl.difficulty" placeholder="Difficulty">
+                <option value=""></option>
+                <option ng-repeat="level in $ctrl.difficulty" ng-value='level'>{{level}}</option>
+            </select>
         </div>
     </div>

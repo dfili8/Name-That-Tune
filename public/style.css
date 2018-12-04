@@ -61,3 +61,8 @@
 .dropdown-content a:hover {background-color: #ddd}
 
 .show {display:block;}
+
+#musicImg {
+    height: 50vh;
+    width: 100%;
+}

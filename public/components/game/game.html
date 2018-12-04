@@ -1,1 +1,11 @@
-<div>Game Page</div>
+<h1>Song Savant</h1>
+    
+   <img id="musicImg" src="https://images.pexels.com/photos/257904/pexels-photo-257904.jpeg?cs=srgb&dl=audio-business-computer-257904.jpg&fm=jpg">
+
+<div>
+   <form id="form" >
+    Enter Song Title: <input type="text" ng-model='$ctrl.songTitle'>
+    <button id="submit"ng-click='$ctrl.submit()'>Submit</button> 
+    <p ng-if='$ctrl.songTitle===true'>Correct</p><p ng-if='$ctrl.songTitle===false'>Incorrect</p>
+  </form>
+</div>

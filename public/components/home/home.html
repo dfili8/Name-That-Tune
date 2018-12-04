@@ -17,10 +17,8 @@
     </div> -->
 
     <div id="dropdown">
-        <div>
-            <select ng-model="$ctrl.difficulty" placeholder="Difficulty">
-                <option value=""></option>
-                <option ng-repeat="level in $ctrl.difficulty" ng-value='level'>{{level}}</option>
+        <select ng-model="$ctrl.level" id="difficulty" placeholder="Level">
+                <option value="">Level</option>
+                <option ng-repeat="level in $ctrl.difficulty">{{level}}</option>
             </select>
-        </div>
-    </div>
+</div>

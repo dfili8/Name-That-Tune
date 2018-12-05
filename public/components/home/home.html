@@ -1,6 +1,6 @@
 <h1>Song Savant</h1>
     
-    <div class="dropdown">
+    <!-- <div class="dropdown">
         <button onclick="myFunction()" class="dropbtn">Pick your genre</button>
         <div id="myDropdown" class="dropdown-content">
         <a href="#Rap">Rap</a>
@@ -14,4 +14,25 @@
         <a href="#Oldies">Oldies</a>
         <a href="#Soul">Soul</a>
         </div>
-    </div>
+    </div> -->
+
+    <img id="musicImg" src="https://images.pexels.com/photos/257904/pexels-photo-257904.jpeg?cs=srgb&dl=audio-business-computer-257904.jpg&fm=jpg">
+
+   
+
+    <div id="dropdown">
+        
+</div>
+
+<div>
+    <form id="form" >
+     Enter Player Name: <input type="text" ng-model='$ctrl.name'>
+
+     <select ng-model="$ctrl.level" id="difficulty" placeholder="Level">
+        <option value="">Level</option>
+        <option ng-repeat="level in $ctrl.difficulty">{{level}}</option>
+     </select>
+     
+     <button id="submit"ng-click='$ctrl.submit()'>Submit</button> 
+   </form>
+ </div>

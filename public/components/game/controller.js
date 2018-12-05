@@ -19,5 +19,15 @@
                 $ctrl.tracks = response.data;
                 console.log($ctrl.tracks);
             })
+            $ctrl.submit = function(){
+                $ctrl.songTitle = 'song';
+                
+                console.log($ctrl.songTitle);
+                };
+                
+            
+            
+            
+        
     });
 };

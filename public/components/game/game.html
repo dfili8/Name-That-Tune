@@ -5,7 +5,7 @@
 <div>
    <form id="form" >
     Enter Song Title: <input type="text" ng-model='$ctrl.songTitle'>
-    <button id="submit"ng-click='$ctrl.submit()'>Submit</button> 
-    <p ng-if='$ctrl.songTitle===true'>Correct</p><p ng-if='$ctrl.songTitle===false'>Incorrect</p>
+    <button id="submit" ng-click='$ctrl.submit()'>Submit</button> 
+    <p ng-if='$ctrl.songTitle==="song"'>Correct</p><p ng-if='$ctrl.songTitle !=="song"'>Incorrect</p>
   </form>
 </div>

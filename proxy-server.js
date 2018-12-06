@@ -1,7 +1,7 @@
 const express = require("express");
 const token = require('./token-router');
 const app = express();
-const port = 8888;
+const port = 8080;
 
 app.use(express.json());
 app.use('/', express.static('./public'));

@@ -28,5 +28,10 @@
                 $ctrl.songTitle = 'song';
                 console.log($ctrl.songTitle);
             };
+            
+            $ctrl.clicks = 0;
+                function add(){
+                clicks++; 
+            };
         });
 };

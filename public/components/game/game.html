@@ -7,5 +7,6 @@
     Enter Song Title: <input type="text" ng-model='$ctrl.songTitle'>
     <button id="submit" ng-click='$ctrl.submit()'>Submit</button> 
     <p ng-if='$ctrl.songTitle==="song"'>Correct</p><p ng-if='$ctrl.songTitle !=="song"'>Incorrect</p>
+    <p>Song {{$ctrl.clicks}} out of 10!</p>   
   </form>
 </div>

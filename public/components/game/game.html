@@ -2,10 +2,17 @@
     
    <img id="musicImg" src="https://images.pexels.com/photos/257904/pexels-photo-257904.jpeg?cs=srgb&dl=audio-business-computer-257904.jpg&fm=jpg">
 
-<div>
+<div ng-repeat="song in $ctrl.tracks">
    <form id="form" >
-    Enter Song Title: <input type="text" ng-model='$ctrl.songTitle'>
-    <button id="submit" ng-click='$ctrl.submit()'>Submit</button> 
-    <p ng-if='$ctrl.songTitle==="song"'>Correct</p><p ng-if='$ctrl.songTitle !=="song"'>Incorrect</p>
+    Enter Song Title: <input type="text" ng-model="$ctrl.answer">
+    <button id="submit" ng-click="$ctrl.submit($ctrl.answer)">Submit</button> 
+    <p ng-show="$ctrl.answer==song.name" >Correct</p>
+    <!-- <p ng-show="$ctrl.answer!=song.name" >Incorrect</p> -->
   </form>
+</div>
+
+
+<div ng-repeat="song in $ctrl.tracks">
+ <h3>{{song.name}}</h3>
+ <audio src="{{song.preview_url}}" controls="controls"></audio>
 </div>

@@ -1,4 +1,4 @@
-{
+"use strict"; {
     angular.module('app')
         .controller('GameController', function($http, GameService){
             const $ctrl = this;
@@ -41,6 +41,9 @@
             
             
             
-        
-    });
+            $ctrl.clicks = 0;
+                function add(){
+                clicks++; 
+            };
+        });
 };

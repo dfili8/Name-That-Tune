@@ -31,11 +31,11 @@
         <option ng-repeat="level in $ctrl.difficulty">{{level}}</option>
      </select>
      
-     <button id="submit"ng-click='$ctrl.submit()'>Submit</button> 
+     <!-- <button id="submit" ng-click='$ctrl.submit()'>Submit</button>  -->
    </form>
 
  </div>
-<div>
+<div ng-click='$ctrl.submit()'>
     <button id="pop" ng-click="$ctrl.setCategory('37i9dQZF1DXcBWIGoYBM5M')">Pop</button>
     <button id="country" ng-click="$ctrl.setCategory('37i9dQZF1DX1lVhptIYRda')">Country</button>
     <button id="RnB" ng-click="$ctrl.setCategory('37i9dQZF1DX4SBhb3fqCJd')">R&B</button></br>

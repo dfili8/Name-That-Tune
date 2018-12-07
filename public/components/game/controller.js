@@ -4,6 +4,8 @@
             const $ctrl = this;
             const category = GameService.category || '37i9dQZF1DX4SBhb3fqCJd';
 
+            
+
             $http.post('/access-token').then(function(response){
                 $ctrl.tokenResponse = response.data;
                 $ctrl.myToken = $ctrl.tokenResponse.access_token;
@@ -17,9 +19,12 @@
                         'Content-Type': 'application/x-www-form-urlencoded'
                     }
                 }).then(function(response){
+                    // $ctrl.preview = response.data.items.tracks[2].preview_url;
                     $ctrl.tracks = response.data.items[2];
+                    
                     console.log($ctrl.tracks);
-
+                    // console.log($ctrl.preview);
+                    
                     
                 }).catch(function(err){
                     console.log(err);
@@ -31,6 +36,7 @@
 
            
             $ctrl.submit = function(){
+                
                 
                $ctrl.correct = $ctrl.answer===$ctrl.tracks.name;
             //    $ctrl.incorrect = $ctrl.answer!==$ctrl.tracks.name;

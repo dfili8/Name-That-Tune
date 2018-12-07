@@ -5,7 +5,7 @@
             
             $ctrl.submit = function(){
                 
-                console.log($ctrl.name);
+                window.location = "#!/game";
                 };
 
             $ctrl.setCategory = function(id){

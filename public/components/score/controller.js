@@ -3,7 +3,8 @@
         .controller('ScoreController', function(GameService){
             const $ctrl = this;
             
-            const playerName = GameService.name;
+            $ctrl.playerName = GameService.name;
+
         
     });
 };

@@ -11,7 +11,9 @@
             $ctrl.setCategory = function(id){
                 GameService.category = id;
             }
-            $ctrl.difficulty = ['Hard', 'Easy'];   
+            $ctrl.difficulty = ['Hard', 'Easy'];  
+            
+            $ctrl.playerName = $ctrl.playerName.value;
         
     });
 };

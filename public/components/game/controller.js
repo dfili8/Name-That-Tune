@@ -47,11 +47,12 @@
                     $ctrl.showAnswer = false;
                     ++index;
                     if(index === $ctrl.tracks.length) {
+                        window.location = "#!/score";
                         console.log('Game Over');
                     } else {
                         $ctrl.selectedTrack = $ctrl.tracks[index].track;
                     }
-                }, 5000);
+                }, 1000);
             };
               
             

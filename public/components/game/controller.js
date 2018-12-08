@@ -39,11 +39,10 @@
             $ctrl.submit = function(){
                 $ctrl.showAnswer = true
                 
-            //    $ctrl.correct = $ctrl.answer===$ctrl.tracks.name;
-            // //    $ctrl.incorrect = $ctrl.answer!==$ctrl.tracks.name;
-                
-            //     console.log($ctrl.tracks.name);
+            
                 $timeout(() => {
+                   
+                 
                     $ctrl.showAnswer = false;
                     ++index;
                     if(index === $ctrl.tracks.length) {
@@ -52,10 +51,27 @@
                     } else {
                         $ctrl.selectedTrack = $ctrl.tracks[index].track;
                     }
-                }, 1000);
+                }, 1000)
+                $ctrl.songTitle='';
+
+                let score = 0;
+            function addScore() {
+                if ($ctrl.showAnswer=true) {
+                score = score +5;}
+                
+                console.log(score);
+            }
+            addScore;       
             };
-              
             
+            let score = 0;
+            function addScore() {
+                if ($ctrl.showAnswer=true) {
+                score = score +5;}
+                
+                console.log(score);
+            }
+            addScore;       
             
             
             $ctrl.clicks = 0;

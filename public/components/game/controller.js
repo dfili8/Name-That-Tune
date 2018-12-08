@@ -58,14 +58,10 @@
             $ctrl.submit = function(){
                 $ctrl.showAnswer = true
                 
-<<<<<<< HEAD
-            $timeout(() => {
-=======
             
                 $timeout(() => {
                    
                  
->>>>>>> ad28d4150a7d16d34a0f713b5b788acda9467a04
                     $ctrl.showAnswer = false;
                     ++index;
                     if(index === $ctrl.tracks.length) {
@@ -77,37 +73,22 @@
                         $ctrl.countDown = 30;
                         console.log($ctrl.countDown);
                         startTimer();
+                        $ctrl.songTitle='';
                     }
                 }, 1000)
-                $ctrl.songTitle='';
+                
+            }
 
-                let score = 0;
-            function addScore() {
-                if ($ctrl.showAnswer=true) {
-                score = score +5;}
-                
-                console.log(score);
-            }
-            addScore;       
-            };
-<<<<<<< HEAD
-=======
+          
+
+         
             
-            let score = 0;
-            function addScore() {
-                if ($ctrl.showAnswer=true) {
-                score = score +5;}
-                
-                console.log(score);
-            }
-            addScore;       
             
             
             $ctrl.clicks = 0;
                 function add(){
                 clicks++; 
             };
->>>>>>> ad28d4150a7d16d34a0f713b5b788acda9467a04
         });
 
         function shuffleArray (list) {

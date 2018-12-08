@@ -1,10 +1,32 @@
 "use strict"; {
     angular.module('app')
-        .controller('GameController', function($http, $timeout, GameService){
+        .controller('GameController', function($http, $timeout, GameService, $interval){
             const $ctrl = this;
             const category = GameService.category || '37i9dQZF1DX4SBhb3fqCJd';
-
             let index = 0;
+            var intervalID = {};
+
+            $ctrl.countDown = 30;
+            startTimer();
+            function startTimer() {
+                intervalID.id = $interval(function(){
+                $ctrl.countDown--;
+                if($ctrl.countDown === 0){
+                    console.log("Sorry, you're out of time :(");
+                    $timeout(() => {
+                        $ctrl.showAnswer = false;
+                        ++index;
+                        if(index === $ctrl.tracks.length) {
+                            window.location = "#!/score";
+                        } else {
+                            $ctrl.selectedTrack = $ctrl.tracks[index].track;
+                            $interval.cancel(intervalID.id);
+                            $ctrl.countDown = 30;
+                            startTimer();
+                        }
+                    }, 2000);
+                }
+            },1000,30);}
 
             $http.post('/access-token').then(function(response){
                 $ctrl.tokenResponse = response.data;
@@ -19,12 +41,9 @@
                         'Content-Type': 'application/x-www-form-urlencoded'
                     }
                 }).then(function(response){
-                    // $ctrl.preview = response.data.items.tracks[2].preview_url;
                     $ctrl.tracks = shuffleArray(response.data.items.filter(item => item.track.preview_url)).slice(0, 5);
                     $ctrl.selectedTrack = $ctrl.tracks[index].track;
                     console.log($ctrl.selectedTrack);
-                    console.log($ctrl.tracks);
-                    // console.log($ctrl.preview);
                     
                     
                 }).catch(function(err){
@@ -39,27 +58,19 @@
             $ctrl.submit = function(){
                 $ctrl.showAnswer = true
                 
-            //    $ctrl.correct = $ctrl.answer===$ctrl.tracks.name;
-            // //    $ctrl.incorrect = $ctrl.answer!==$ctrl.tracks.name;
-                
-            //     console.log($ctrl.tracks.name);
-                $timeout(() => {
+            $timeout(() => {
                     $ctrl.showAnswer = false;
                     ++index;
                     if(index === $ctrl.tracks.length) {
                         console.log('Game Over');
                     } else {
                         $ctrl.selectedTrack = $ctrl.tracks[index].track;
+                        $interval.cancel(intervalID.id);
+                        $ctrl.countDown = 30;
+                        console.log($ctrl.countDown);
+                        startTimer();
                     }
                 }, 5000);
-            };
-              
-            
-            
-            
-            $ctrl.clicks = 0;
-                function add(){
-                clicks++; 
             };
         });
 

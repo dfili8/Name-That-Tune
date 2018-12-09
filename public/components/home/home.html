@@ -2,24 +2,13 @@
 
     <img id="musicImg" src="https://images.pexels.com/photos/257904/pexels-photo-257904.jpeg?cs=srgb&dl=audio-business-computer-257904.jpg&fm=jpg">
 
-    <div id="dropdown">
-        
-</div>
-
 <div>
     <form id="form" >
      Enter Player Name: <input type="text" ng-model='$ctrl.playerName'>
-
-     <select ng-model="$ctrl.level" id="difficulty" placeholder="Level">
-        <option value="">Level</option>
-        <option ng-repeat="level in $ctrl.difficulty">{{level}}</option>
-     </select>
-     
-     <!-- <button id="submit" ng-click='$ctrl.submit()'>Submit</button>  -->
    </form>
+</div>
 
- </div>
-<div >
+<div>
     <button id="pop" ng-click="$ctrl.setCategory('37i9dQZF1DXcBWIGoYBM5M')">Pop</button>
     <button id="country" ng-click="$ctrl.setCategory('37i9dQZF1DX1lVhptIYRda')">Country</button>
     <button id="RnB" ng-click="$ctrl.setCategory('37i9dQZF1DX4SBhb3fqCJd')">R&B</button></br>

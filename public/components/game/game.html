@@ -1,19 +1,28 @@
 <h1>Song Savant</h1>
     
-   <img id="musicImg" src="https://images.pexels.com/photos/257904/pexels-photo-257904.jpeg?cs=srgb&dl=audio-business-computer-257904.jpg&fm=jpg">
+<img id="musicImg" src="https://images.pexels.com/photos/257904/pexels-photo-257904.jpeg?cs=srgb&dl=audio-business-computer-257904.jpg&fm=jpg">
 
 <div>
-   <form name="form" id="form">
+  <form name="form" id="form">
     Enter Song Title: <input type="text" name='playerName' ng-model='$ctrl.songTitle'>
-    <button id="submit" ng-click='$ctrl.submit()'>Submit</button> 
-    <p ng-if="$ctrl.showAnswer"><span ng-if='$ctrl.songTitle.toLowerCase()===$ctrl.selectedTrack.name.toLowerCase()'>Correct</span><span ng-if='$ctrl.songTitle.toLowerCase()!==$ctrl.selectedTrack.name.toLowerCase()'>Incorrect</span></p>
-    <p>Song {{$ctrl.clicks}} out of 5!</p>   
+    <button id="submit" ng-click='$ctrl.submit()'>
+      Submit
+    </button> 
+    <p ng-if="$ctrl.showAnswer">
+      <span ng-if='$ctrl.songTitle.toLowerCase()===$ctrl.selectedTrack.name.toLowerCase()'>
+        Correct! Way to be in tune
+      </span>
+      <span ng-if='$ctrl.songTitle.toLowerCase()!==$ctrl.selectedTrack.name.toLowerCase()'>
+        Sorry :( That's incorrect, this is <b>{{$ctrl.selectedTrack.name}} by {{$ctrl.selectedTrack.album.artists[0].name}}</b> 	 
+      </span>
+    </p>  
   </form>
 </div>
 
 <h1>Timer: {{$ctrl.countDown}} seconds left</h1>
 
-<div>
- <h3>{{$ctrl.selectedTrack.name}} - {{$ctrl.selectedTrack.album.artists[0].name}}</h3>
- <audio src="{{$ctrl.selectedTrack.preview_url}}" controls="controls" autoplay="autoplay"></audio>
+<div class="audio-container">
+  <audio src="{{$ctrl.selectedTrack.preview_url}}" controls="controls" autoplay="autoplay"></audio>
 </div>
+
+<h3>Track {{$ctrl.numSong}} of 5</h3> 

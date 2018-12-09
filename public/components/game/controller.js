@@ -57,11 +57,18 @@
            
             $ctrl.submit = function(){
                 $ctrl.showAnswer = true
+                let score = 0;
+
+                if($ctrl.songTitle===$ctrl.selectedTrack.name ) {
+                    score+=5;
+                    console.log(score);
+                }
+                
                 
             
                 $timeout(() => {
                    
-                 
+                    
                     $ctrl.showAnswer = false;
                     ++index;
                     if(index === $ctrl.tracks.length) {
@@ -73,9 +80,17 @@
                         $ctrl.countDown = 30;
                         console.log($ctrl.countDown);
                         startTimer();
+
+                        
+                        console.log($ctrl.selectedTrack.name)
+                        console.log($ctrl.songTitle)
+
                         $ctrl.songTitle='';
+                        
                     }
                 }, 1000)
+
+               
                 
             }
 

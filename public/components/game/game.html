@@ -4,9 +4,9 @@
 
 <div>
    <form name="form" id="form">
-    Enter Song Title: <input type="text" name='playerName' ng-model='$ctrl.songTitle'>
+    Enter Song Title: <input type="text" id="input" name='playerName' ng-model='$ctrl.songTitle'>
     <button id="submit" ng-click='$ctrl.submit()'>Submit</button> 
-    <p ng-if="$ctrl.showAnswer"><span ng-if='$ctrl.songTitle.toLowerCase()===$ctrl.selectedTrack.name.toLowerCase()'>Correct</span><span ng-if='$ctrl.songTitle.toLowerCase()!==$ctrl.selectedTrack.name.toLowerCase()'>Incorrect</span></p>
+    <p id='answer' ng-if="$ctrl.showAnswer"><span id='correct' ng-model='$ctrl.correct' ng-if='$ctrl.songTitle.toLowerCase()===$ctrl.selectedTrack.name.toLowerCase()'>Correct</span><span id='incorrect' ng-if='$ctrl.songTitle.toLowerCase()!==$ctrl.selectedTrack.name.toLowerCase()'>Incorrect</span></p>
     <p>Song {{$ctrl.clicks}} out of 5!</p>   
   </form>
 </div>

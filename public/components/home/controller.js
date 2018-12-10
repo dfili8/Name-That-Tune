@@ -12,6 +12,7 @@
                 GameService.category = id;
                 GameService.name = $ctrl.playerName;
                 window.location = "#!/game";
+                
                   
             }
             $ctrl.difficulty = ['Hard', 'Easy'];  

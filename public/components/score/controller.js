@@ -6,5 +6,10 @@
             $ctrl.playerName = GameService.name;
 
         
+
+            const score  = GameService.score;
+            $ctrl.playerScore = GameService.score;
+
+        
     });
 };

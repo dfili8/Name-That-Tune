@@ -1,5 +1,6 @@
+
 body{
-    height:200px;
+    height:100vh;
     background-color: rgba(70, 71, 71, 0.678);
     background-image: linear-gradient(rgba(70, 71, 71, 0.678),  #ca84ca);
 }
@@ -21,12 +22,14 @@ h3{
     border-radius: 8px;
 }
 input{
-    padding: 10px;
-    display: block;
+    width: 67%;
+    padding: 9px 20px;
+    margin: -6px 0;
+    box-sizing: border-box;
     border: none;
-    margin-left:  278px;
-    border-bottom: 1px solid #ccc;
-    width: 50%;
+    margin-left: 19%;
+    background: transparent;
+    border-bottom: 2px solid black;
 }
 #submit{
     background-color: rgba(70, 71, 71, 0.678);
@@ -48,6 +51,10 @@ select#diffculty{
 #container {
 	width: 600px;
 	height: auto;
+}
+audio{
+    width: 99vh;
+    margin-left: 15%;
 }
 
 .row {
@@ -113,3 +120,13 @@ select#diffculty{
     height: 50vh;
     width: 100%;
 }
+
+@media only screen and (max-width:768px) {
+    /* For tablets: */
+
+}
+
+    @media only screen and (max-width:500px) {
+        /* For mobile phones: */
+        
+    }

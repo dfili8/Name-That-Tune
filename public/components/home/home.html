@@ -1,39 +1,18 @@
 <h1>Song Savant</h1>
-    
-    <!-- <div class="dropdown">
-        <button onclick="myFunction()" class="dropbtn">Pick your genre</button>
-        <div id="myDropdown" class="dropdown-content">
-        <a href="#Rap">Rap</a>
-        <a href="#Country">Country</a>
-        <a href="#EDM">EDM</a>
-        <a href="#RnB">RnB</a>
-        <a href="#Rock">Rock</a>
-        <a href="#Blues">Blues</a>
-        <a href="#K-Pop">K-Pop</a>
-        <a href="#Reggae">Reggae</a>
-        <a href="#Oldies">Oldies</a>
-        <a href="#Soul">Soul</a>
-        </div>
-    </div> -->
 
     <img id="musicImg" src="https://images.pexels.com/photos/257904/pexels-photo-257904.jpeg?cs=srgb&dl=audio-business-computer-257904.jpg&fm=jpg">
 
-    <h3>Song number: `${clicks}`/10</h3>
-    <h3>Timer: <span id="time">0:10</span> seconds left for this question!</h3>
-
-    <div id="dropdown">
-        
+<div>
+    <form id="form" >
+   <h3>Enter Player Name: </h3>  <input type="text" ng-model='$ctrl.playerName'>
+   </form>
 </div>
 
 <div>
-    <form id="form" >
-     <h3>Enter Player Name:</h3> <input type="text" ng-model='$ctrl.name'>
-
-     <select ng-model="$ctrl.level" id="difficulty" placeholder="Level">
-        <option value="">Level</option>
-        <option id="level" ng-repeat="level in $ctrl.difficulty">{{level}}</option>
-     </select>
-     
-     <button id="submit"ng-click='$ctrl.submit()'>Submit</button> 
-   </form>
- </div>
+    <button id="pop" ng-click="$ctrl.setCategory('37i9dQZF1DXcBWIGoYBM5M')">Pop</button>
+    <button id="country" ng-click="$ctrl.setCategory('37i9dQZF1DX1lVhptIYRda')">Country</button>
+    <button id="RnB" ng-click="$ctrl.setCategory('37i9dQZF1DX4SBhb3fqCJd')">R&B</button></br>
+    <button id="decades" ng-click="$ctrl.setCategory('37i9dQZF1DX4o1oenSJRJd')">Decades(00's)</button>
+    <button id="rock" ng-click="$ctrl.setCategory('37i9dQZF1DWXRqgorJj26U')">Rock</button>
+    <button id="hipHop" ng-click="$ctrl.setCategory('37i9dQZF1DX0XUsuxWHRQd')">Hip-Hop</button>
+</div>

@@ -3,16 +3,16 @@
    <img id="musicImg" src="https://images.pexels.com/photos/257904/pexels-photo-257904.jpeg?cs=srgb&dl=audio-business-computer-257904.jpg&fm=jpg">
 
 <div >
+    <audio src="{{$ctrl.selectedTrack.preview_url}}" controls="controls"></audio>
    <form name="form" id="form" >
-    Enter Song Title: <input type="text" name='playerName' ng-model='$ctrl.songTitle'>
+   <h3>Enter Song Title:</h3>  <input type="text" name='playerName' ng-model='$ctrl.songTitle'>
     <button id="submit" ng-click='$ctrl.submit()'>Submit</button> 
     <p ng-if="$ctrl.showAnswer"><span ng-if='$ctrl.songTitle.toLowerCase()===$ctrl.selectedTrack.name.toLowerCase()'>Correct</span><span ng-if='$ctrl.songTitle.toLowerCase()!==$ctrl.selectedTrack.name.toLowerCase()'>Incorrect</span></p>
-    <p>Song {{$ctrl.clicks}} out of 10!</p>   
+   <h3><p>Song {{$ctrl.clicks}} out of 10!</p></h3>
   </form>
 </div>
 
 
 <div>
  <h3>{{$ctrl.selectedTrack.name}} - {{$ctrl.selectedTrack.album.artists[0].name}}</h3>
- <audio src="{{$ctrl.selectedTrack.preview_url}}" controls="controls"></audio>
 </div>

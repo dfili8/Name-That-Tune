@@ -5,13 +5,17 @@
             
             $ctrl.submit = function(){
                 
-                window.location = "#!/game";
+               
                 };
 
             $ctrl.setCategory = function(id){
                 GameService.category = id;
+                GameService.name = $ctrl.playerName;
+                window.location = "#!/game";
+                  
             }
-            $ctrl.difficulty = ['Hard', 'Easy'];   
+            $ctrl.difficulty = ['Hard', 'Easy'];  
+          
         
     });
 };

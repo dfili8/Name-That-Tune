@@ -2,6 +2,7 @@ body{
     height:200px;
     background-color: rgba(70, 71, 71, 0.678);
     background-image: linear-gradient(rgba(70, 71, 71, 0.678),  #ca84ca);
+    display: flex;
 }
 
 .audio-container {
@@ -21,16 +22,9 @@ h3{
     color: black;
     text-shadow: 1px 1px 2px black, 0 0 25px rgb(11, 250, 178), 0 0 5px rgb(7, 194, 147);
 }
-#musicImg{
-    border-radius: 8px;
-}
+
 input{
-    padding: 10px;
-    display: block;
-    border: none;
-    margin-left:  278px;
-    border-bottom: 1px solid #ccc;
-    width: 50%;
+    width: 40vw;
 }
 #submit{
     background-color: rgba(70, 71, 71, 0.678);
@@ -116,4 +110,22 @@ select#diffculty{
 #musicImg {
     height: 50vh;
     width: 100%;
+    border-radius: 8px;
+    
+}
+
+.form {
+    display: flex;
+    justify-content: center;
+}
+
+@media only screen and (max-width: 768px) {
+
+    #category {
+        display: flex;
+        justify-content: space-evenly;
+        margin-top: 5em;
+    }
+
+    
 }

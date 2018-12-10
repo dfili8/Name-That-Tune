@@ -58,13 +58,16 @@
            
             $ctrl.submit = function(){
                 $ctrl.showAnswer = true
-                let score = 0;
+              let score = 0;
+              
 
                 if($ctrl.songTitle===$ctrl.selectedTrack.name ) {
                     score+=5;
                     console.log(score);
+                    GameService.score = score;
+
+                    
                 }
-                
                 
                 $timeout(() => {
                    
@@ -81,12 +84,9 @@
                         $ctrl.numSong++;
                         startTimer();
 
-                        
-                        console.log($ctrl.selectedTrack.name)
-                        console.log($ctrl.songTitle)
-
                         $ctrl.songTitle='';
                         
+
                     }
                 }, 1000)
 

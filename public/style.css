@@ -5,6 +5,10 @@ body{
     background-image: linear-gradient(rgba(70, 71, 71, 0.678),  #ca84ca);
 }
 
+.audio-container {
+    display: flex;
+    justify-content: center;
+}
 
 h1{
     font-family: 'Cinzel', serif; 

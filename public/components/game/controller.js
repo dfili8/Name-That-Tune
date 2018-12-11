@@ -2,6 +2,7 @@
     angular.module('app')
         .controller('GameController', function($http, $timeout, GameService, $interval){
             const $ctrl = this;
+            let score = 0;
             const category = GameService.category || '37i9dQZF1DX4SBhb3fqCJd';
             let index = 0;
             var intervalID = {};
@@ -57,7 +58,7 @@
            
             $ctrl.submit = function(){
                 $ctrl.showAnswer = true
-              let score = 0;
+           
               
 
                 if($ctrl.songTitle===$ctrl.selectedTrack.name ) {
@@ -80,6 +81,8 @@
                         $ctrl.countDown = 30;
                         $ctrl.numSong++;
                         startTimer();
+
+                        
 
                         $ctrl.songTitle='';
                         

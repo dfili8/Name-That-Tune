@@ -15,7 +15,6 @@
                 intervalID.id = $interval(function(){
                     $ctrl.countDown--;
                     if($ctrl.countDown === 0){
-                        console.log("Sorry, you're out of time :(");
                         $timeout(() => {
                             $ctrl.showAnswer = false;
                             ++index;
@@ -66,8 +65,6 @@
                     score+=5;
                     console.log(score);
                     GameService.score = score;
-
-                    
                 }
                 
                 $timeout(() => {
@@ -91,7 +88,7 @@
                         
 
                     }
-                }, 1000)
+                }, 2000)
 
                
                 

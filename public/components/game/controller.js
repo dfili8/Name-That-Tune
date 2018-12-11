@@ -15,7 +15,6 @@
                 intervalID.id = $interval(function(){
                     $ctrl.countDown--;
                     if($ctrl.countDown === 0){
-                        console.log("Sorry, you're out of time :(");
                         $timeout(() => {
                             $ctrl.showAnswer = false;
                             ++index;
@@ -36,6 +35,7 @@
             $http.post('/access-token').then(function(response){
                 $ctrl.tokenResponse = response.data;
                 $ctrl.myToken = $ctrl.tokenResponse.access_token;
+                console.log($ctrl.myToken);
 
                 $http({
                     method: 'GET',
@@ -60,21 +60,16 @@
             $ctrl.submit = function(){
                 $ctrl.showAnswer = true
            
-              
-
                 if($ctrl.songTitle===$ctrl.selectedTrack.name ) {
                     score+=5;
                     console.log(score);
                     GameService.score = score;
-
-                    
                 }
                 
                 $timeout(() => {
-                   
-                    
                     $ctrl.showAnswer = false;
                     ++index;
+                    
                     if(index === $ctrl.tracks.length) {
                         window.location = "#!/score";
                         console.log('Game Over');
@@ -84,17 +79,9 @@
                         $ctrl.countDown = 30;
                         $ctrl.numSong++;
                         startTimer();
-
-                        
-
                         $ctrl.songTitle='';
-                        
-
                     }
-                }, 1000)
-
-               
-                
+                }, 2000)  
             }
         });
 

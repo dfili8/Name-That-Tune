@@ -13,7 +13,7 @@
         Correct! Way to be in tune
       </span>
       <span ng-if='$ctrl.songTitle.toLowerCase()!==$ctrl.selectedTrack.name.toLowerCase()'>
-        Sorry :( That's incorrect, this is <b>{{$ctrl.selectedTrack.name}} by {{$ctrl.selectedTrack.album.artists[0].name}}</b> 	 
+        Sorry :( That's incorrect, this is <b>{{$ctrl.selectedTrack.name}} - {{$ctrl.selectedTrack.album.artists[0].name}}</b> 	 
       </span>
     </p> 
     <span ng-if='$ctrl.countDown === 0'>

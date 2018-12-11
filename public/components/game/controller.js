@@ -35,6 +35,7 @@
             $http.post('/access-token').then(function(response){
                 $ctrl.tokenResponse = response.data;
                 $ctrl.myToken = $ctrl.tokenResponse.access_token;
+                console.log($ctrl.myToken);
 
                 $http({
                     method: 'GET',
@@ -59,8 +60,6 @@
             $ctrl.submit = function(){
                 $ctrl.showAnswer = true
            
-              
-
                 if($ctrl.songTitle===$ctrl.selectedTrack.name ) {
                     score+=5;
                     console.log(score);
@@ -68,10 +67,9 @@
                 }
                 
                 $timeout(() => {
-                   
-                    
                     $ctrl.showAnswer = false;
                     ++index;
+                    
                     if(index === $ctrl.tracks.length) {
                         window.location = "#!/score";
                         console.log('Game Over');
@@ -81,17 +79,9 @@
                         $ctrl.countDown = 30;
                         $ctrl.numSong++;
                         startTimer();
-
-                        
-
                         $ctrl.songTitle='';
-                        
-
                     }
-                }, 2000)
-
-               
-                
+                }, 2000)  
             }
         });
 

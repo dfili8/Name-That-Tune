@@ -122,11 +122,36 @@ audio{
 @media only screen and (max-width: 768px) {
 
 
-    #category {
+    #category{
         display: flex;
-        justify-content: space-between;
-        margin-top: 5em;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
     }
+    
+
+    #musicImg {
+        height: 37vh;
+        width: 90%;
+        border-radius: 8px;
+        
+    }
+
+    #cat1 {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #cat2 {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        padding: 0em;
+    }
+    
 
     
 }

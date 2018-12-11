@@ -1,10 +1,11 @@
 
 /* index.html */
 body{
-    height:100vh;
-    background-color: rgba(70, 71, 71, 0.678);
-    background-image: linear-gradient(rgba(70, 71, 71, 0.678),  #ca84ca);
+    /* height:100vh; */
+    background: rgba(70, 71, 71, 0.678);
+    background: linear-gradient(90deg,rgba(70, 71, 71, 0.678),  #ca84ca);
     display: flex;
+    justify-content: center;
 }
 
 
@@ -15,7 +16,7 @@ h1{
     color: black;
     text-shadow: 1px 1px 2px black, 0 0 25px rgb(11, 250, 178), 0 0 5px rgb(7, 194, 147);
 }
-h3{
+h2{
     text-align: center;
     font-family: 'Playfair Display SC', serif;
     color: black;
@@ -33,10 +34,21 @@ input{
 
 #musicImg {
     height: 50vh;
-    width: 100%;
+    width: 80vw;
     border-radius: 8px;
+<<<<<<< HEAD
     opacity: 0.7;
+=======
+    display:flex;
+    justify-content: center;
+>>>>>>> e40033feebe317e64b938c0b8bc96f6fa73185a3
     
+}
+
+#img {
+    width: 90%;
+    display:flex;
+    justify-content: center;
 }
 
 
@@ -57,28 +69,111 @@ input{
     border: none;
     cursor: pointer;
 }
-#category{
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.buttons {
+    text-align: center;
+}
+
+.btn-hover {
+    width: 200px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    cursor: pointer;
+    margin: 20px;
+    height: 55px;
+    text-align:center;
+    border: none;
+    background-size: 300% 100%;
+
+    border-radius: 50px;
+    -moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+
+.btn-hover:hover {
+    background-position: 100% 0;
+    -moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+
+.btn-hover:focus {
+    outline: none;
+}
+
+.btn-hover.color-1 {
+    background-image: linear-gradient(to right, #eb3941, #f15e64, #e14e53, #e2373f);
+    box-shadow: 0 4px 15px 0 rgba(49, 196, 190, 0.75);
+}
+.btn-hover.color-2 {
+    background-image: linear-gradient(to right, #667eea, #764ba2, #6B8DD6, #8E37D7);
+    box-shadow: 0 4px 15px 0 rgba(229, 66, 10, 0.75);
+}
+.btn-hover.color-3 {
+    background-image: linear-gradient(to right, #fc6076, #ff9a44, #ef9d43, #e75516);
+    box-shadow: 0 4px 15px 0 rgba(116, 79, 168, 0.75);
+}
+.btn-hover.color-4 {
+    background-image: linear-gradient(to right, #6253e1, #852D91, #A3A1FF, #F24645);;
+    box-shadow: 0 4px 15px 0 rgba(252, 104, 110, 0.75);
+}
+.btn-hover.color-5 {
+    background-image:linear-gradient(to right, #ed6ea0, #ec8c69, #f7186a , #FBB03B);;
+    box-shadow: 0 4px 15px 0 rgba(23, 168, 108, 0.75);
+}
+.btn-hover.color-6 {
+    background-image: linear-gradient(to right, #36308f, rgb(146, 33, 252), rgb(206, 9, 206), #fa7199);
+    box-shadow: 0 4px 15px 0 rgba(16, 236, 170, 0.75);
+}
+
+/* #category{
     display: flex;
     justify-content: center;
     flex-direction: column;
+<<<<<<< HEAD
 }
 #cat2{
     padding: 2em;
 }
+=======
+    align-items: center;
+} */
+
+>>>>>>> e40033feebe317e64b938c0b8bc96f6fa73185a3
 #pop{
+    border-radius: 16px;
     width: 30em;
+    font-size: medium;
     height: 4em;
 }
 #country{
+    border-radius: 16px;
     width: 30em;
+    font-size: medium;
     height: 4em;
 }
 #RnB{
+    border-radius: 16px;
     width: 30em;
+    font-size: medium;
     height: 4em;
+}
+#decades{
+    border-radius: 16px;
 }
 #decades00s{
     width: 30em;
+    font-size: medium;
     height: 4em;
 }
 
@@ -98,11 +193,15 @@ input{
 }
 
 #rock{
+    border-radius: 16px;
     width: 30em;
+    font-size: medium;
     height: 4em;
 }
 #hipHop{
+    border-radius: 16px;
     width: 30em;
+    font-size: medium;
     height: 4em;
 }
 .dropbtn:hover, .dropbtn:focus {
@@ -129,6 +228,7 @@ audio{
 .show {display:block;}
 
 
+ 
 /* score.html */
 
 
@@ -136,11 +236,80 @@ audio{
 @media only screen and (max-width: 768px) {
 
 
-    #category {
+
+/*home.html*/
+    /* #musicImg {
+        height: 37vh;
+        width: 71%;
+        border-radius: 8px;
+        margin-left: 1em;
+        
+    } */
+
+    #cat1 {
         display: flex;
-        justify-content: space-between;
-        margin-top: 5em;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
     }
+
+    #cat2 {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+       
+    }
+
+    #cat3 {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        padding: 0em;
+    }
+
+    #pop{
+        width: 15em;
+        height: 3em;
+    }
+    #country{
+        width: 15em;
+        height: 3em;
+    }
+    #RnB{
+        width: 15em;
+        height: 3em;
+    }
+    #decades00s{
+        width: 15em;
+        height: 3em;
+    }
+    
+    #decades90s{
+        width: 15em;
+        height: 3em;
+    }
+    
+    #decades80s{
+        width: 15em;
+        height: 3em;
+    }
+    
+    #decades70s{
+        width: 15em;
+        height: 3em;
+    }
+    
+    #rock{
+        width: 15em;
+        height: 3em;
+    }
+    #hipHop{
+        width: 15em;
+        height: 3em;
+    }
+    
 
     
 }

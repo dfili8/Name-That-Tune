@@ -1,31 +1,36 @@
 <h1>Song Savant</h1>
 
+<div id="img">
+
     <img id="musicImg" src="https://images.pexels.com/photos/257904/pexels-photo-257904.jpeg?cs=srgb&dl=audio-business-computer-257904.jpg&fm=jpg">
+
+</div>
 
 <div class='form'>
     <form id="form" >
-        <input type="text" id="name" required="required"/>
-        <label for="name">Name</label>
+   <h2>Enter Player Name:</h2>   <input type="text" ng-model='$ctrl.playerName'>
    </form>
 </div>
 
-<div id="category">
+<div id="category" class="buttons">
+
     <div id="cat1">
-        <button class="items" id="pop" ng-click="$ctrl.setCategory('37i9dQZF1DXcBWIGoYBM5M')">Pop</button>
-        <button class="items" id="country" ng-click="$ctrl.setCategory('37i9dQZF1DX1lVhptIYRda')">Country</button>
-        <button class="items" id="RnB" ng-click="$ctrl.setCategory('37i9dQZF1DX4SBhb3fqCJd')">R&B</button></br>
+        <button id="pop" class="btn-hover color-1 items" ng-click="$ctrl.setCategory('37i9dQZF1DXcBWIGoYBM5M')"><h2>Pop</h2></button>
+        <button id="country" class="btn-hover color-2 items" ng-click="$ctrl.setCategory('37i9dQZF1DX1lVhptIYRda')"><h2>Country</h2></button>
+        <button id="RnB" class="btn-hover color-3 items"  ng-click="$ctrl.setCategory('37i9dQZF1DX4SBhb3fqCJd')"><h2>R&B</h2></button>
     </div>
-    <div id=cat2>
-        <button class="items" id="hipHop" ng-click="$ctrl.setCategory('37i9dQZF1DX0XUsuxWHRQd')">Hip-Hop</button>
-        <button class="items" id="rock" ng-click="$ctrl.setCategory('37i9dQZF1DWXRqgorJj26U')">Rock</button>
-        <button class="items" id="decades00s" ng-click="$ctrl.setCategory('37i9dQZF1DX4o1oenSJRJd')">00's</button>
+    <div id="cat2">
+        <button id="decades" class="btn-hover color-4 items" ng-click="$ctrl.setCategory('37i9dQZF1DX4o1oenSJRJd')"><h2>Decades(00's)</h2></button>
+        <button id="rock" class="btn-hover color-5 items" ng-click="$ctrl.setCategory('37i9dQZF1DWXRqgorJj26U')"><h2>Rock</h2></button>
+        <button id="hipHop" class="btn-hover color-6 items" ng-click="$ctrl.setCategory('37i9dQZF1DX0XUsuxWHRQd')"><h2>Hip-Hop</h2></button>
     </div>
-    <div id=cat3>
-        <button class="items" id="decades90s" ng-click="$ctrl.setCategory('37i9dQZF1DXbTxeAdrVG2l')">90's</button>
-        <button class="items" id="decades80s" ng-click="$ctrl.setCategory('37i9dQZF1DX1spT6G94GFC')">80's</button>
-        <button class="items" id="decades70s" ng-click="$ctrl.setCategory('37i9dQZF1DWTJ7xPn4vNaz')">70's</button>
+    <div id="cat3">
+        <button id="decades90s" class="items" ng-click="$ctrl.setCategory('37i9dQZF1DXbTxeAdrVG2l')">90's</button>
+        <button id="decades80s" class="items" ng-click="$ctrl.setCategory('37i9dQZF1DX1spT6G94GFC')">80's</button>
+        <button id="decades70s" class="items" ng-click="$ctrl.setCategory('37i9dQZF1DWTJ7xPn4vNaz')">70's</button>
     </div>
-</div>
+
 </div>
 
-  
+
+     

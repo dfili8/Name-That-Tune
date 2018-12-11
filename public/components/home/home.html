@@ -4,25 +4,26 @@
 
 <div class='form'>
     <form id="form" >
-   <h3>Enter Player Name:</h3>   <input type="text" ng-model='$ctrl.playerName'>
+        <input type="text" id="name" required="required"/>
+        <label for="name">Name</label>
    </form>
 </div>
 
 <div id="category">
     <div id="cat1">
-        <button id="pop" ng-click="$ctrl.setCategory('37i9dQZF1DXcBWIGoYBM5M')">Pop</button>
-        <button id="country" ng-click="$ctrl.setCategory('37i9dQZF1DX1lVhptIYRda')">Country</button>
-        <button id="RnB" ng-click="$ctrl.setCategory('37i9dQZF1DX4SBhb3fqCJd')">R&B</button></br>
+        <button class="items" id="pop" ng-click="$ctrl.setCategory('37i9dQZF1DXcBWIGoYBM5M')">Pop</button>
+        <button class="items" id="country" ng-click="$ctrl.setCategory('37i9dQZF1DX1lVhptIYRda')">Country</button>
+        <button class="items" id="RnB" ng-click="$ctrl.setCategory('37i9dQZF1DX4SBhb3fqCJd')">R&B</button></br>
     </div>
     <div id=cat2>
-        <button id="hipHop" ng-click="$ctrl.setCategory('37i9dQZF1DX0XUsuxWHRQd')">Hip-Hop</button>
-        <button id="rock" ng-click="$ctrl.setCategory('37i9dQZF1DWXRqgorJj26U')">Rock</button>
-        <button id="decades00s" ng-click="$ctrl.setCategory('37i9dQZF1DX4o1oenSJRJd')">00's</button>
+        <button class="items" id="hipHop" ng-click="$ctrl.setCategory('37i9dQZF1DX0XUsuxWHRQd')">Hip-Hop</button>
+        <button class="items" id="rock" ng-click="$ctrl.setCategory('37i9dQZF1DWXRqgorJj26U')">Rock</button>
+        <button class="items" id="decades00s" ng-click="$ctrl.setCategory('37i9dQZF1DX4o1oenSJRJd')">00's</button>
     </div>
     <div id=cat3>
-        <button id="decades90s" ng-click="$ctrl.setCategory('37i9dQZF1DXbTxeAdrVG2l')">90's</button>
-        <button id="decades80s" ng-click="$ctrl.setCategory('37i9dQZF1DX1spT6G94GFC')">80's</button>
-        <button id="decades70s" ng-click="$ctrl.setCategory('37i9dQZF1DWTJ7xPn4vNaz')">70's</button>
+        <button class="items" id="decades90s" ng-click="$ctrl.setCategory('37i9dQZF1DXbTxeAdrVG2l')">90's</button>
+        <button class="items" id="decades80s" ng-click="$ctrl.setCategory('37i9dQZF1DX1spT6G94GFC')">80's</button>
+        <button class="items" id="decades70s" ng-click="$ctrl.setCategory('37i9dQZF1DWTJ7xPn4vNaz')">70's</button>
     </div>
 </div>
 </div>

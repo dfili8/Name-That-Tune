@@ -7,7 +7,6 @@
 
         
 
-            const score  = GameService.score;
             $ctrl.playerScore = GameService.score;
 
         

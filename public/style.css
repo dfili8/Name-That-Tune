@@ -1,10 +1,10 @@
 
 /* index.html */
 body{
-    height:100vh;
-    background-color: rgba(70, 71, 71, 0.678);
-    background-image: linear-gradient(rgba(70, 71, 71, 0.678),  #ca84ca);
-    display: flex;
+    /* height:100vh; */
+    background: rgba(70, 71, 71, 0.678);
+    background: linear-gradient(90deg,rgba(70, 71, 71, 0.678),  #ca84ca);
+    /* display: flex; */
 }
 
 
@@ -35,9 +35,17 @@ input{
 
 #musicImg {
     height: 50vh;
-    width: 100%;
+    width: 80vw;
     border-radius: 8px;
+    display:flex;
+    justify-content: center;
     
+}
+
+#img {
+    width: 90%;
+    display:flex;
+    justify-content: center;
 }
 
 
@@ -218,20 +226,15 @@ audio{
 @media only screen and (max-width: 768px) {
 
 
-    #category{
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        align-items: center;
-    }
-    
 
-    #musicImg {
+/*home.html*/
+    /* #musicImg {
         height: 37vh;
-        width: 90%;
+        width: 71%;
         border-radius: 8px;
+        margin-left: 1em;
         
-    }
+    } */
 
     #cat1 {
         display: flex;
@@ -245,7 +248,56 @@ audio{
         justify-content: center;
         flex-direction: column;
         align-items: center;
+       
+    }
+
+    #cat3 {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
         padding: 0em;
+    }
+
+    #pop{
+        width: 15em;
+        height: 3em;
+    }
+    #country{
+        width: 15em;
+        height: 3em;
+    }
+    #RnB{
+        width: 15em;
+        height: 3em;
+    }
+    #decades00s{
+        width: 15em;
+        height: 3em;
+    }
+    
+    #decades90s{
+        width: 15em;
+        height: 3em;
+    }
+    
+    #decades80s{
+        width: 15em;
+        height: 3em;
+    }
+    
+    #decades70s{
+        width: 15em;
+        height: 3em;
+    }
+    
+    #rock{
+        width: 15em;
+        height: 3em;
+    }
+    #hipHop{
+        width: 15em;
+        height: 3em;
     }
     
 

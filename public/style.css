@@ -25,22 +25,33 @@ h2{
 }
 
 input{
-    width: 45vw;
-    box-sizing: border-box;
+    /* width: 45vw; */
     border: none;
     background: transparent;
     margin-bottom: 5em;
     border-bottom: 2px solid black;
+<<<<<<< HEAD
     text-align: center;
     
+=======
+>>>>>>> 3ecadc7b4a6b20771739c73436faafd255242cbb
 }
 
 #musicImg {
     height: 50vh;
     width: 90vw;
     border-radius: 8px;
+<<<<<<< HEAD
     /* display:flex;
     justify-content: center; */
+=======
+<<<<<<< HEAD
+    opacity: 0.7;
+=======
+    display:flex;
+    justify-content: center;
+>>>>>>> e40033feebe317e64b938c0b8bc96f6fa73185a3
+>>>>>>> 3ecadc7b4a6b20771739c73436faafd255242cbb
     
 }
 
@@ -124,6 +135,23 @@ input{
     box-shadow: 0 4px 15px 0 rgba(16, 236, 170, 0.75);
 }
 
+<<<<<<< HEAD
+=======
+/* #category{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+<<<<<<< HEAD
+}
+#cat2{
+    padding: 2em;
+}
+=======
+    align-items: center;
+} */
+
+>>>>>>> e40033feebe317e64b938c0b8bc96f6fa73185a3
+>>>>>>> 3ecadc7b4a6b20771739c73436faafd255242cbb
 #pop{
     border-radius: 16px;
     width: 30em;
@@ -306,6 +334,15 @@ h3 {
 
         /* For mobile phones: */
     @media only screen and (max-width:500px) {
+        #cat2{
+            padding: 0em;
+        }
 
-        
+        #category {
+            margin-top: 0;
+        }
+
+        .items{
+            margin-bottom: 10px;
+        }
     }

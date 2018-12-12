@@ -1,9 +1,13 @@
-<h1>Game Over</h1> 
-<div id="playerName">
+<div class="scoreBoard"></div>
+    <h1 class="gameOver">Game Over</h1> 
+
     <div class="row">
-        <div class="name" >{{$ctrl.playerName}}</div>
-        <div ng-click="$ctrl.playerScore" class="score">{{$ctrl.playerScore}}</div>
+        <div>
+            <p class="name" >{{$ctrl.playerName}}Name</p>
+        </div>
+        <div>
+            <p ng-model="$ctrl.playerScore" class="score">{{$ctrl.playerScore}}score</p>
+        </div>
     </div>
-    
     
 </div>

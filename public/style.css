@@ -76,7 +76,7 @@ input{
 .buttons {
     text-align: center;
 }
-
+/* Shows CSS Transitions*/
 .btn-hover {
     width: 200px;
     font-size: 16px;
@@ -132,7 +132,7 @@ input{
     background-image: linear-gradient(to right, #36308f, rgb(146, 33, 252), rgb(206, 9, 206), #fa7199);
     box-shadow: 0 4px 15px 0 rgba(16, 236, 170, 0.75);
 }
-
+/* Example of responsive design */
 #category{
     display: flex;
     justify-content: center;

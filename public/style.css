@@ -237,8 +237,8 @@ h3 {
     margin : 0;
     padding : 0;
     font-family : arial, sans-serif;
-    background-color : #15242d;
-    height: 100%;height:auto;
+    /* background-color : #15242d; */
+    height: 100vh;
     min-width: 100%;
     width:auto;
     font-size: 15px;
@@ -250,8 +250,8 @@ h3 {
   /* color:white; */
 	-webkit-animation: flash linear 1s infinite;
     animation: flash linear 1s infinite;
-    height: 45vh;
-    width: 100vw;
+    /* height: 100vh; */
+    /* width: 100vw; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -261,6 +261,23 @@ h3 {
 .row {
     color: white;
 }
+
+.scroll {
+    display: inline-block;
+    white-space: nowrap;
+    animation: floatText 5s infinite linear;
+    padding-left: 100%; /*Initial offset*/
+  }
+  .scroll:hover {
+    animation-play-state: paused;
+  }
+  @keyframes floatText {
+    to {
+      transform: translateX(-100%);
+    }
+  }
+
+
 @-webkit-keyframes flash {
 	0% { opacity: 1; } 
 	50% { opacity: .1; } 

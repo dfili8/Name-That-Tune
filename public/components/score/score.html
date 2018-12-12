@@ -1,12 +1,15 @@
-<div class="scoreBoard"></div>
-    <h1 class="gameOver">Game Over</h1> 
+<div class="scoreBoard">
+   
+        <h1 class="gameOver">Game Over</h1> 
 
+        <div class="scroll">
+            <h1 class="thanks" >Thanks for Playing {{$ctrl.playerName}}!!!!</h1>
+        </div>
     <div class="row">
         <div>
-            <p class="name" >{{$ctrl.playerName}}Name</p>
-        </div>
-        <div>
-            <p ng-model="$ctrl.playerScore" class="score">{{$ctrl.playerScore}}score</p>
+            <!-- <p class="name" >{{$ctrl.playerName}}Name</p> -->
+       
+            <p ng-model="$ctrl.playerScore" class="score">Score: {{$ctrl.playerScore}}</p>
         </div>
     </div>
     

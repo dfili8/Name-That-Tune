@@ -60,7 +60,7 @@
             $ctrl.submit = function(){
                 $ctrl.showAnswer = true
            
-                if($ctrl.songTitle===$ctrl.selectedTrack.name ) {
+                if($ctrl.songTitle.toLowerCase()===$ctrl.selectedTrack.name.toLowerCase() ) {
                     score+=5;
                     console.log(score);
                     GameService.score = score;
@@ -79,8 +79,10 @@
                         $ctrl.countDown = 30;
                         $ctrl.numSong++;
                         startTimer();
-                        $ctrl.songTitle='';
+                        
+                        
                     }
+                    $ctrl.songTitle='';
                 }, 2000)  
             }
         });

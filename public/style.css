@@ -25,7 +25,7 @@ h2{
 }
 
 input{
-    /* width: 45vw; */
+    width: 45vw;
     border: none;
     background: transparent;
     margin-bottom: 5em;
@@ -71,7 +71,7 @@ input{
 }
 /* Shows CSS Transitions*/
 .btn-hover {
-    width: 200px;
+    /* width: 200px; */
     font-size: 16px;
     font-weight: 600;
     color: #fff;

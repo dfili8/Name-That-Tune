@@ -69,9 +69,7 @@ input{
 .buttons {
     text-align: center;
 }
-
-
-
+/* Shows CSS Transitions*/
 .btn-hover {
     width: 200px;
     font-size: 16px;
@@ -126,7 +124,18 @@ input{
     background-image: linear-gradient(to right, #36308f, rgb(146, 33, 252), rgb(206, 9, 206), #fa7199);
     box-shadow: 0 4px 15px 0 rgba(16, 236, 170, 0.75);
 }
-
+.btn-hover.color-7 {
+    background-image: linear-gradient(to right, #6253e1, #852D91, #A3A1FF, #F24645);
+    box-shadow: 0 4px 15px 0 rgba(192, 28, 124, 0.75);
+}
+.btn-hover.color-8 {
+    background-image: linear-gradient(to right, #29323c, #485563, #2b5876, #4e4376);
+    box-shadow: 0 4px 15px 0 rgba(36, 151, 126, 0.75);
+}
+.btn-hover.color-9 {
+    background-image: linear-gradient(to right, #25aae1, #4481eb, #04befe, #3f86ed);
+    box-shadow: 0 4px 15px 0 rgba(14, 160, 245, 0.75);
+}
 
 
 
@@ -136,59 +145,64 @@ input{
 
 #pop{
     border-radius: 16px;
-    width: 30em;
+    width: 19em;
     font-size: medium;
     height: 4em;
 }
 #country{
 
     border-radius: 16px;
-    width: 30em;
+    width: 19em;
     font-size: medium;
     height: 4em;
 }
 #RnB{
     border-radius: 16px;
-    width: 30em;
+    width: 19em;
     font-size: medium;
     height: 4em;
 }
 
 #decades00s{
     border-radius: 16px;
-    width: 30em;
+    width: 19em;
     font-size: medium;
     height: 4em;
 }
 
 #decades90s{
-    width: 30em;
+    border-radius: 16px;
+    width: 19em;
+    font-size: medium;
     height: 4em;
 }
 
 #decades80s{
-    width: 30em;
+    border-radius: 16px;
+    width: 19em;
+    font-size: medium;
     height: 4em;
 }
 
 #decades70s{
-    width: 30em;
+    border-radius: 16px;
+    width: 19em;
+    font-size: medium;
     height: 4em;
 }
 
 #rock{
     border-radius: 16px;
-    width: 30em;
+    width: 19em;
     font-size: medium;
     height: 4em;
 }
 #hipHop{
     border-radius: 16px;
-    width: 30em;
+    width: 19em;
     font-size: medium;
     height: 4em;
 }
-
 
 /* game.html */
 

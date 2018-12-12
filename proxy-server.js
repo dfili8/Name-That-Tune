@@ -5,6 +5,7 @@ const port = 8080;
 
 app.use(express.json());
 app.use('/', express.static('./public'));
+/*Endpoints in our application*/
 app.use('/access-token', token);
 
 app.listen(port, function(){

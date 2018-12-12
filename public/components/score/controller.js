@@ -6,5 +6,7 @@
             $ctrl.playerName = GameService.name;
 
             $ctrl.playerScore = GameService.score;
+
+         
     });
 };

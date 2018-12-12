@@ -1,8 +1,12 @@
 <h1>Song Savant</h1>
-    
-<img id="musicImg" src="https://images.pexels.com/photos/257904/pexels-photo-257904.jpeg?cs=srgb&dl=audio-business-computer-257904.jpg&fm=jpg">
 
-<div>
+<div id="img">
+
+    <img id="musicImg" src="https://images.pexels.com/photos/257904/pexels-photo-257904.jpeg?cs=srgb&dl=audio-business-computer-257904.jpg&fm=jpg">
+
+</div>
+
+<div class='form'>
   <form name="form" id="form">
     Enter Song Title: <input type="text" name='playerName' ng-model='$ctrl.songTitle'>
     <button id="submit" ng-click='$ctrl.submit()'>
@@ -28,4 +32,4 @@
   <audio src="{{$ctrl.selectedTrack.preview_url}}" controls="controls" autoplay="autoplay"></audio>
 </div>
 
-<h3>Track {{$ctrl.numSong}} of 5</h3> 
+<h3 class='songCount' >Track {{$ctrl.numSong}} of 5</h3> 

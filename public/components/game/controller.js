@@ -19,7 +19,7 @@
                             $ctrl.showAnswer = false;
                             ++index;
                             if(index === $ctrl.tracks.length) {
-                                // window.location = "#!/score";
+                                window.location = "#!/score";
                             } else {
                                 $ctrl.selectedTrack = $ctrl.tracks[index].track;
                                 $interval.cancel(intervalID.id);
@@ -71,7 +71,7 @@
                     ++index;
                     
                     if(index === $ctrl.tracks.length) {
-                        // window.location = "#!/score";
+                        window.location = "#!/score";
                         console.log('Game Over');
                     } else {
                         $ctrl.selectedTrack = $ctrl.tracks[index].track;

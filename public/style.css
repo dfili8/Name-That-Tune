@@ -41,6 +41,10 @@ input::-webkit-input-placeholder {
     color: white !important;
     }
 
+.songCount {
+    color: white;
+}
+
 #musicImg {
     height: 50vh;
     width: 90vw;
@@ -238,6 +242,18 @@ h3 {
 
  
 /* score.html */
+#musicImg1{
+    height: 92vh;
+    width: 91vw;
+    border-radius: 8px;
+    display: flex;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    justify-content: flex-start;
+    opacity: 0.5;
+} 
 
 .score {
     display: flex;

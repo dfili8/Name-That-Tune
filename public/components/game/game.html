@@ -10,6 +10,8 @@
   <form name="form" id="form">
     Enter Song Title: <input type="text" name='playerName' ng-model='$ctrl.songTitle'>
     <button id= "submit" class= "btn-hover color-11" ng-click='$ctrl.submit()'>
+    <input type="text" name='playerName' placeholder='Enter Song Title' ng-model='$ctrl.songTitle'>
+    <button id="submit" ng-click='$ctrl.submit()'>
       Submit
     </button> 
     <p ng-if="$ctrl.showAnswer">

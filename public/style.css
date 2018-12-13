@@ -13,14 +13,14 @@ body{
 h1{
     font-family: 'Cinzel', serif; 
     text-align: center;
-    color: black;
-    text-shadow: 1px 1px 2px black, 0 0 25px rgb(11, 250, 178), 0 0 5px rgb(7, 194, 147);
+    color:white;
+    text-shadow: 1px 1px 2px white, 0 0 25px rgb(11, 250, 178), 0 0 5px rgb(7, 194, 147);
 }
 h2{
     text-align: center;
     font-family: 'Playfair Display SC', serif;
-    color: black;
-    text-shadow: 1px 1px 2px black, 0 0 25px rgb(11, 250, 178), 0 0 5px rgb(7, 194, 147);
+    color: white;
+    text-shadow: 1px 1px 2px white, 0 0 25px rgb(11, 250, 178), 0 0 5px rgb(7, 194, 147);
    
 }
 
@@ -29,7 +29,7 @@ input{
     border: none;
     background: transparent;
     margin-bottom: 3em;
-    border-bottom: 2px solid black;
+    border-bottom: 2px solid white;
     text-align: center;
     font-size: 28px;
     color: white;
@@ -213,7 +213,11 @@ input::-webkit-input-placeholder {
 }
 
 /* game.html */
-
+.btn-hover.color-11 {
+    background-image: linear-gradient(to right, #6253e1, #852D91, #A3A1FF, #F24645);
+    box-shadow: 0 4px 15px 0 rgba(230, 24, 168, 0.75);
+    width: 8em;
+}
 audio{
     width: 75vw;
     margin: auto;
@@ -233,12 +237,13 @@ h3 {
 
 
  
-/* score.html */d
+/* score.html */
 
 .score {
     display: flex;
     justify-content: center;
     align-items: center;
+    text-shadow: 1px 1px 2px white, 0 0 25px rgb(11, 250, 178), 0 0 5px rgb(7, 194, 147);
 }
 
 .scoreBoard {     

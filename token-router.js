@@ -15,7 +15,6 @@ tokenRouter.post('/', function (req, res) {
         },
         json: true
     };
-
     request(data).then(response => res.json(response));
 });
 

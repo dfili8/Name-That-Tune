@@ -28,9 +28,12 @@ input{
     width: 45vw;
     border: none;
     background: transparent;
-    margin-bottom: 5em;
+    margin-bottom: 3em;
     border-bottom: 2px solid black;
     text-align: center;
+    font-size: 28px;
+    color: white;
+    margin-top: 2em;
     
 }
 
@@ -95,6 +98,7 @@ input{
     -webkit-transition: all .4s ease-in-out;
     transition: all .4s ease-in-out;
 }
+
 
 .btn-hover:focus {
     outline: none;
@@ -207,7 +211,7 @@ input{
 /* game.html */
 
 audio{
-    width: 99vw;
+    width: 75vw;
     margin: auto;
 }
 

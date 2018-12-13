@@ -41,6 +41,10 @@ input::-webkit-input-placeholder {
     color: white !important;
     }
 
+.songCount {
+    color: white;
+}
+
 #musicImg {
     height: 50vh;
     width: 90vw;

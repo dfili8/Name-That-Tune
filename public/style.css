@@ -1,4 +1,3 @@
-
 /* index.html */
 body{
     /* height:100vh; */
@@ -24,6 +23,15 @@ h2{
    
 }
 
+.explicit{
+    display: flex;
+    justify-content: center;
+}
+
+#explicit {
+    color: white;
+}
+
 input{
     width: 45vw;
     border: none;
@@ -37,9 +45,36 @@ input{
     
 }
 
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+.incorrect {
+    display: flex;
+    justify-content: center;
+    border: 2px solid red;
+    padding: 5px;
+    border-radius: 10px;
+    color: white;
+    width: 40%;
+}
+
+#song-input{
+    width: 45vw;
+    border: none;
+    background: transparent;
+    margin-bottom: 3em;
+    border-bottom: 2px solid white;
+    text-align: center;
+    font-size: 28px;
+    color: white;
+    margin-top: 2em;
+}
+
 input::-webkit-input-placeholder {
     color: white !important;
-    }
+}
 
 .songCount {
     color: white;
@@ -49,9 +84,6 @@ input::-webkit-input-placeholder {
     height: 50vh;
     width: 90vw;
     border-radius: 8px;
-    /* display:flex;
-    justify-content: center; */
-
     display:flex;
     justify-content: center;
 
@@ -453,5 +485,61 @@ h3 {
 
         .items{
             margin-bottom: 10px;
+        }
+
+        #explicit{
+            font-size: 12px;
+        }
+
+        #song-entry{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        #song-input{
+            width: 100%;
+            margin-bottom: 10px;
+            font-size: 18px;
+            margin-top: 10px;
+        }
+
+        .form {
+            margin-top: 2em;
+            width: 100%;
+            align-items: center;
+        } 
+
+        #form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        #username {
+            width: 100%;
+            font-size: 18px;
+        }
+
+        #submit{
+            width:100%;
+        }
+
+        audio{
+            width: 90%;
+        }
+
+        #header{
+            font-size: 14px;
+        }
+
+        .incorrect {
+            display: flex;
+            justify-content: center;
+            border: 2px solid red;
+            padding: 5px;
+            border-radius: 10px;
+            color: white;
+            width: 90%;
         }
     }

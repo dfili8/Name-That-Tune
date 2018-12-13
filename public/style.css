@@ -37,6 +37,10 @@ input{
     
 }
 
+input::-webkit-input-placeholder {
+    color: white !important;
+    }
+
 #musicImg {
     height: 50vh;
     width: 90vw;
